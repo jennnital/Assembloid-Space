@@ -64,7 +64,7 @@
   
   .brand {
     font-family: 'Bianzhidai', cursive;
-    font-size: 20rem;
+    font-size: 10rem;
     letter-spacing: 0.1em;
     margin-bottom: 1rem;
     text-transform: lowercase;
@@ -146,11 +146,11 @@
   
   .bio-text {
     max-width: 600px;
-    font-family: 'Polonium', sans-serif;
+    font-family: 'FelixTitling', sans-serif;
   }
   
   .bio-text h1 {
-    font-family: 'FelixTitling', serif;
+    font-family: 'Polonium', serif;
     font-size: 2rem;
     margin-bottom: 1rem;
     text-transform: lowercase;
@@ -158,7 +158,7 @@
   }
   
   .bio-text p {
-    font-size: 1rem;
+    font-size: 0.7rem;
     line-height: 1.6;
     color: #cccccc;
   }

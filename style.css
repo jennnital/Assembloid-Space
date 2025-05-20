@@ -14,9 +14,30 @@
   
   /* Custom font */
   @font-face {
-    font-family: 'Barlowfold';
-    src: url('/fonts/Barlowfold.otf') format('opentype');
+    font-family: 'FelixTitling';
+    src: url('/fonts/FELIXTI.TTF') format('truetype');
     font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Bianzhidai';
+    src: url('/fonts/BIANZHIDAI-BUBBLE.OTF') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'FelixTitling';
+    src: url('/fonts/FELIXTI.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'PoloniumBold';
+    src: url('/fonts/POLONIUM-BOLD.OTF') format('opentype');
+    font-weight: bold;
     font-style: normal;
   }
   

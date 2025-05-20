@@ -15,7 +15,7 @@
   /* Custom font */
   @font-face {
     font-family: 'Barlowfold';
-    src: url('./fonts/Barlowfold.otf') format('otf');
+    src: url('/fonts/Barlowfold.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
   }
@@ -23,7 +23,7 @@
   /* Full-screen hero background */
   .hero {
     height: 100vh;
-    background: url('./images/background.jpg') no-repeat center center fixed;
+    background: url('/images/background.jpg') no-repeat center center fixed;
     background-size: cover;
     display: flex;
     align-items: center;

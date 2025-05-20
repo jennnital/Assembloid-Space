@@ -7,38 +7,30 @@
   
   html, body {
     height: 100%;
-    font-family: 'Barlowfold', sans-serif;
+    font-family: 'Polonium', sans-serif;
     background: black;
     color: white;
   }
   
-  /* Custom font */
-  @font-face {
-    font-family: 'FelixTitling';
-    src: url('/fonts/FELIXTI.TTF') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
-
+  /* Custom fonts */
   @font-face {
     font-family: 'Bianzhidai';
     src: url('/fonts/BIANZHIDAI-BUBBLE.OTF') format('opentype');
-    font-weight: normal;
-    font-style: normal;
   }
   
   @font-face {
     font-family: 'FelixTitling';
     src: url('/fonts/FELIXTI.TTF') format('truetype');
-    font-weight: normal;
-    font-style: normal;
   }
   
   @font-face {
     font-family: 'PoloniumBold';
     src: url('/fonts/POLONIUM-BOLD.OTF') format('opentype');
-    font-weight: bold;
-    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Polonium';
+    src: url('/fonts/POLONIUM.OTF') format('opentype');
   }
   
   /* Full-screen hero background */
@@ -62,7 +54,7 @@
     left: 0;
     height: 100%;
     width: 100%;
-    background: rgba(0,0,0,0.4); /* subtle overlay */
+    background: rgba(0, 0, 0, 0.4); /* subtle overlay */
     z-index: -1;
   }
   
@@ -71,6 +63,7 @@
   }
   
   .brand {
+    font-family: 'Bianzhidai', cursive;
     font-size: 20rem;
     letter-spacing: 0.1em;
     margin-bottom: 1rem;
@@ -78,13 +71,16 @@
   }
   
   .tagline {
+    font-family: 'Polonium', sans-serif;
     font-size: 1.2rem;
     margin-bottom: 2rem;
     line-height: 1.5;
     color: #cccccc;
   }
   
+  /* CTA button */
   .cta-button {
+    font-family: 'PoloniumBold', sans-serif;
     padding: 12px 24px;
     background: white;
     color: black;
@@ -99,8 +95,9 @@
     transform: translateY(-2px);
   }
   
-  /* Floating info button */
+  /* Floating info/home button */
   .floating-button {
+    font-family: 'PoloniumBold', sans-serif;
     position: fixed;
     top: 20px;
     right: 20px;
@@ -119,54 +116,9 @@
     background: white;
     transform: translateY(-2px);
   }
-
+  
   /* Bio Page Layout */
-.bio-section {
-  min-height: 100vh;
-  background-color: black;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 4rem 2rem;
-}
-
-.bio-container {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 1000px;
-  gap: 2rem;
-  align-items: center;
-  justify-content: center;
-}
-
-.bio-image img {
-  width: 260px;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 0 15px rgba(255,255,255,0.1);
-}
-
-.bio-text {
-  max-width: 600px;
-  font-family: 'Barlowfold', sans-serif;
-}
-
-.bio-text h1 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  text-transform: lowercase;
-  letter-spacing: 0.05em;
-}
-
-.bio-text p {
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #cccccc;
-}
-
-/* Bio Page Layout */
-.bio-section {
+  .bio-section {
     min-height: 100vh;
     background-color: black;
     color: white;
@@ -189,15 +141,16 @@
     width: 260px;
     height: auto;
     border-radius: 8px;
-    box-shadow: 0 0 15px rgba(255,255,255,0.1);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
   }
   
   .bio-text {
     max-width: 600px;
-    font-family: 'Barlowfold', sans-serif;
+    font-family: 'Polonium', sans-serif;
   }
   
   .bio-text h1 {
+    font-family: 'FelixTitling', serif;
     font-size: 2rem;
     margin-bottom: 1rem;
     text-transform: lowercase;

@@ -15,7 +15,7 @@
   /* Custom fonts */
   @font-face {
     font-family: 'Bianzhidai';
-    src: url('/fonts/BIANZHIDAI-BUBBLE.OTF') format('opentype');
+    src: url('/fonts/BIANZHIDAI-MESSIER.OTF') format('opentype');
   }
   
   @font-face {
@@ -35,17 +35,18 @@
   
   /* Full-screen hero background */
   .hero {
-    height: 100vh;
-    background: url('/images/background.jpg') no-repeat center center fixed;
-    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     padding: 2rem;
+    height: 100vh;
+    overflow: hidden;
     position: relative;
-    z-index: 1;
+    background: url('/images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
   }
+
   
   .hero::after {
     content: "";
@@ -60,15 +61,20 @@
   
   .hero-content {
     max-width: 800px;
+    max-width: 90%;
+    width: 100%;
   }
   
   .brand {
-    font-family: 'Bianzhidai', cursive;
-    font-size: 10rem;
-    letter-spacing: 0.1em;
-    margin-bottom: 1rem;
-    text-transform: lowercase;
-  }
+  font-family: 'Bianzhidai', cursive;
+  font-size: clamp(3rem, 10vw, 8rem); /* Scales with viewport */
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+  text-transform: lowercase;
+  line-height: 1;
+  word-break: break-word;
+  } 
+
   
   .tagline {
     font-family: 'Polonium', sans-serif;
